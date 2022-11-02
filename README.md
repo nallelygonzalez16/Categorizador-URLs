@@ -2,7 +2,7 @@ Clasificador-de-Urls
 
 # Documento de explicacion de proyecto:
 
-  Este proyecto consiste en un clasificador de Urls con base a 3 categorias previamente establecidas por el equipo desarrollador. Se implementó el lenguaje de programación Python en el IDE de Visual Studio Code y la ejecución por hilos del proceso como tal para optimizar el análisis de 12000 Urls.
+  Este proyecto consiste en un clasificador de Urls con base a 3 categorias previamente establecidas por el equipo desarrollador. Se implementó el lenguaje de programación Python en el IDE de Visual Studio Code y la ejecución por hilos del proceso como tal para optimizar el análisis de 7000 Urls.
 
 # Categorias a utilizar para el clasificador y sus palabras claves: 
 
@@ -31,7 +31,7 @@ computadores = ["information","computational","algorithm","binary","optimization
 
 # Repositorio con urls:
 
-  Como repositorio de las urls se utilizó un CSV obtenido de https://www.kaggle.com/code/shawon10/url-classification-by-naive-bayes/data y sobre el cual se acomodaron los primeros 12000 urls para que estos estuviesen dentro de las categorias escogidas.
+  Como repositorio de las urls se utilizó un CSV obtenido de https://www.kaggle.com/code/shawon10/url-classification-by-naive-bayes/data y sobre el cual se acomodaron los primeros 7000 urls para que estos estuviesen dentro de las categorias escogidas.
 
 Para poder acceder a la información de este CSV se utilizó la libreria csv de Python.
 
