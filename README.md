@@ -62,7 +62,7 @@ Para este apartado del proyecto se utilizaron dos librerías: bs4 (BeautifulSoup
 ![image](https://user-images.githubusercontent.com/61404066/198919967-18e4002c-d7ca-49fd-a839-6b2635a8b162.png)
 
 
-Paralelismo:
+# Paralelismo:
 Con fin de lograr resultados en menor tiempo al recorrer los 10000 links utilizados para ser clasificados se aplicó un nivel de paralelismo por medio de la librería Thread, específicamente la sección de threading. La cual debe ser importada del archivo Python de la siguiente manera.
 from threading import Thread
 Después de importar la librería se utiliza la siguiente función para realizar el paralelismo.
@@ -79,7 +79,7 @@ La programación con hilos para realizar paralelismo ofrece varias ventajas una 
 Además, al realizar un mismo programa por medio de hilos requiere que se utilicen menos recursos del computador. 
 
  
-Probabilidad de bayes:
+# Probabilidad de bayes:
 Para realizar el cálculo de Bayes para saber a que categoría pertenece cada URL se realizaron una serie de cálculos. 
 Las primeras 3 variables se utilizan para calcular la probabilidad previa, al dividir la cantidad de palabras que tiene el url sobre una categoría y el total de palabras de la misma categoría.
 Las siguientes 3 variables se utilizan para calcular la probabilidad final de que el url pertenezca a una u otra categoría lo cual se logra al multiplicar los resultados de las variables anteriores por categoría, por el resultado de la división de la cantidad de las palabras de una categoría entre el total de palabras.
