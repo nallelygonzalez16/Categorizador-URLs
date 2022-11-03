@@ -146,6 +146,9 @@ Se renderiza un componente llamado Graph y se envían los datos por parámetro.
 
 # Resultado Graph 
 
+![image](https://user-images.githubusercontent.com/61506908/199645245-66eb12ac-5471-4247-bf96-dcf8b1ac337e.png)
+
+
 # Tabla de resultados
 Se ejecuta un GET para obtener los datos generados en el archivo de python, y se agregan esos datos a la variable *datos*
 
@@ -163,12 +166,15 @@ Se renderiza un componente llamado TableDisplay y se envían los datos por pará
 
 # Resultado TableDisplay 
 
+![image](https://user-images.githubusercontent.com/61506908/199645277-17d76af3-e189-428c-bdb2-0c6f8f3eb6f6.png)
+
 # Resultados de la ejecución utilizando hilos
 Se ejecutó con 300 links, tardó 21 segundos en ejecutarse.
 
 ![image](https://user-images.githubusercontent.com/61506908/199617262-aee1107d-d9cc-44d9-a679-ad885dd9948c.png)
 
 # Resultados de la ejecución secuencial
+
 Se ejecutó con 300 links, tardó 99 segundos en ejecutarse.
 ![image](https://user-images.githubusercontent.com/61506908/199617078-df8546bd-f9e0-4fb2-af05-38dc6d34d8c5.png)
 
