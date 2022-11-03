@@ -12,6 +12,12 @@ npm install requests
 Luego debe importarlo dentro del archivo Python
 Import requests
 
+De igual forma la librería Flask
+Comando:
+pip3 install flask
+Luego debe importarlo dentro del archivo Python
+from flask import Flask
+
 # Categorias a utilizar para el clasificador y sus palabras claves: 
 
 arte = ["Art","art","oil","liberal","artists","craft","painting","artwork","creative","creativity","design","gallery","crafts","crafting",
@@ -90,15 +96,37 @@ Las siguientes 3 variables se utilizan para calcular la probabilidad final de qu
   
 Luego de estos cálculos se realizan una serie de condicionales para determinar cuál fue la mayor probabilidad y de esta forma asignarle al url la categoría a la que pertenece. 
 
-#Server-Client
+# Server-Client
+Para que nuestro archivo .py funcione como servidor, se debe crear un entorno virtual y posteriomente este se debe activar:
+Comando para crear entorno virtual: python3 -m venv venv
+Comando para activar entorno virtual: venv\Scripts\activate
+*venv es el nombre que se le dio al entorno virtual.*
 
+Luego de tener el entorno virtual activo, se procede a implementar la librería de Flask:
+![image](https://user-images.githubusercontent.com/61506908/199640108-b30a6b67-5b16-422b-8dec-d050ce09726a.png)
+
+*app* será nuestra variable que está utilizando la librería de Flask, de manera que luego con esa variable se crean las rutas para generar las APIs necesarias en el proyecto.
+![image](https://user-images.githubusercontent.com/61506908/199640264-f5ef4ca9-ee86-43e3-b477-00cd265d4008.png)
+Para cada ruta se debe crear una respectiva función, que lleve el mismo nombre de la ruta. Aquí es donde funciona y tiene sentido la librería de Flask, pues lo que retorne la función, quedará en la dirección que corresponde a la ruta, y luego podrá consumirse por medio de un GET.
+![image](https://user-images.githubusercontent.com/61506908/199640590-ac6c99df-60b7-4161-9700-a07d128525fb.png)
+
+Finalmente, se debe ejecutar la siguiente línea de código para correr la *app*
+![image](https://user-images.githubusercontent.com/61506908/199640742-33c865ff-8a2d-4d3e-b1b9-dbf01bac83c2.png)
+
+El Api generado puede verse la dirección local, del localhost , puerto 5000 y las rutas que asignamos:
+#http://localhost:5000/categorizador o http://127.0.0.1:5000/categorizador
+![image](https://user-images.githubusercontent.com/61506908/199641448-36ef459f-5c7e-4e00-a0ea-489fc1f55368.png)
+
+#http://localhost:5000/porcentajes o http://127.0.0.1:5000/porcentajes
 #Frontend 
+![image](https://user-images.githubusercontent.com/61506908/199641566-daf83f19-91e8-4253-bbb8-ba8afaf49e03.png)
 
 #Gráfico
 #Tabla de resultados
 
 
 # Resultados de la ejecución utilizando hilos
+Se ejecutó con 300 links 
 ![image](https://user-images.githubusercontent.com/61506908/199617262-aee1107d-d9cc-44d9-a679-ad885dd9948c.png)
 
 # Resultados de la ejecución secuencial
