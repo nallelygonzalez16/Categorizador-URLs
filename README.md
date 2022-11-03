@@ -120,24 +120,50 @@ Finalmente, se debe ejecutar la siguiente línea de código para correr la *app*
 
 El Api generado puede verse la dirección local, del localhost , puerto 5000 y las rutas que asignamos:
 
-# http://localhost:5000/categorizador o http://127.0.0.1:5000/categorizador
+ http://localhost:5000/categorizador o http://127.0.0.1:5000/categorizador
 
 ![image](https://user-images.githubusercontent.com/61506908/199641448-36ef459f-5c7e-4e00-a0ea-489fc1f55368.png)
 
-# http://localhost:5000/porcentajes o http://127.0.0.1:5000/porcentajes
+ http://localhost:5000/porcentajes o http://127.0.0.1:5000/porcentajes
 
 ![image](https://user-images.githubusercontent.com/61506908/199641566-daf83f19-91e8-4253-bbb8-ba8afaf49e03.png)
 
 
 # Frontend 
-# Gráfico
-# Tabla de resultados
 
+# Gráfico
+Se ejecuta un GET para obtener los datos generados en el archivo de python, y se agregan esos datos a la variable *porcentajes*
+
+![image](https://user-images.githubusercontent.com/61506908/199642216-a934620c-aa22-4db8-910c-37a57d373f6b.png)
+
+Se renderiza un componente llamado Graph y se envían los datos por parámetro.
+
+![image](https://user-images.githubusercontent.com/61506908/199642627-3813e1ea-b87d-475e-a2bc-662e3beb7a76.png)
+
+# Graph
+
+![image](https://user-images.githubusercontent.com/61506908/199642586-dc5b7363-6d76-4a6c-a687-7193c9a7eb35.png)
+
+# Tabla de resultados
+Se ejecuta un GET para obtener los datos generados en el archivo de python, y se agregan esos datos a la variable *datos*
+
+![image](https://user-images.githubusercontent.com/61506908/199642074-8e46c29f-e7c3-4abe-a15b-02a563b2234f.png)
+
+Se renderiza un componente llamado TableDisplay y se envían los datos por parámetro.
+
+![image](https://user-images.githubusercontent.com/61506908/199642264-d78725b6-724b-4a84-ab97-da616184f45d.png)
+
+# TableDisplay
+
+![image](https://user-images.githubusercontent.com/61506908/199642410-bd7d3b4f-b6f2-4aea-a000-c00ee128dbe2.png)
+
+![image](https://user-images.githubusercontent.com/61506908/199642548-6ccfed01-a447-4dc3-91a0-4b4aad24a09d.png)
 
 # Resultados de la ejecución utilizando hilos
 Se ejecutó con 300 links 
 ![image](https://user-images.githubusercontent.com/61506908/199617262-aee1107d-d9cc-44d9-a679-ad885dd9948c.png)
 
 # Resultados de la ejecución secuencial
+Se ejecutó con 300 links
 ![image](https://user-images.githubusercontent.com/61506908/199617078-df8546bd-f9e0-4fb2-af05-38dc6d34d8c5.png)
 
